@@ -1,0 +1,272 @@
+/* Udacity logo */
+
+#udacity img {
+	margin: 15px 15px;
+	border-radius: 5% 15%;;
+	height: 75px;
+	width: 75px;
+}
+
+header{
+	display: flex;
+    justify-content: flex-start;
+	flex-wrap: wrap;
+	flex-direction: column;
+	max-width: 100%;
+	width: 920px;
+	height: 120px;
+	background-color: #FFF;
+}
+
+body {
+	font: 13px;
+	color: #000;
+}
+
+body ,html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#header {
+	margin-left: auto;
+	text-align: right;
+	padding: 0 15px;
+	margin: -15px;
+	color: #002;
+}
+
+/*  Image for main page */
+
+#my-title {
+	background: no-repeat center/cover url("../img/main-img.png");
+	width: 920px;
+	height: 255px;
+	margin-top: 4px;
+	max-width: 100%;
+	text-align: center;	
+	line-height: 95px;
+	font-size: 1.8em;
+	color: #bbb;
+	vertical-align: middle;
+	box-shadow: 2px 2px 2px 0 #004;
+}
+
+#my-title p {
+    text-shadow: 2px 4px 1px #004;
+    opacity: 1.5;
+}
+
+.font {
+	font-family: "helvetica", sans-serif;
+}
+
+#content {
+	display: flex;
+	width: 920px;
+	max-width: 100%;
+}
+
+.main-content {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer-content {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.project-header {
+	width: 920px;
+	max-width: 100%;
+	font-size: 1.2em;
+}
+
+.project-box {
+	box-shadow: 2px 2px 2px 0 #002;
+	width: 24%;
+	text-align: center;
+	margin: 5px;
+	padding: 5px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	flex: 1;
+}
+
+.project-box:hover {
+	background-color: #666;
+}
+
+.box-frame img {
+	overflow: visible;
+	height:205px;
+	width: 100%;
+}
+
+.box-frame p {
+	font-style: italic;
+	font-size: 14px;
+	width: 100%;
+}
+
+.nav-site {
+	font-size: 1.1em;
+	font-weight: bold;
+    text-decoration: underline;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer {
+	width: 920px;
+	max-width: 100%;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	text-align: center;
+	font-size: 15px;
+    font-weight: bold;
+}
+
+footer img {
+	width: 35px;
+	height: 35px;
+}
+
+/* Breakpoints */
+
+@media screen and (max-width: 900px) {
+	#content {
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	.project-box {
+		min-width: 55%;
+		max-width: 55%;
+		padding: 5px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.box-frame p {
+		font-size: 1.1em;
+	}
+
+	.box-frame img {
+		height: 250px;
+		object-fit: fill;
+        object-position: center;
+	}
+
+	.project-header {
+		font-size: 1.2em;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+
+	#udacity {
+		height: 130px;
+		font-size: 1.1em;
+		line-height: 130px;
+	}
+
+	#udacity img {
+		height: 45px;
+		width: 45px;
+		box-shadow: 2px 2px 15px #bbb;
+	}
+
+	header {
+		display: flex;
+		height: 120px;
+		background-color: #fff;
+		border-bottom: 3px solid #444;
+        margin: -10px 10px;
+	}
+
+	#header {
+		margin: -15px 10px;
+	}
+
+	.project-box {
+		min-width:65%;
+	}
+	
+	.box-frame {
+		width:100%;
+	}
+
+	.box-frame img{
+		height:250px;
+		width: 100%;
+		object-fit: fill;
+	}
+
+	.box-frame p {
+		font-size: 1.1em;
+	}
+
+	.project-header {
+		font-size: 1.2em;
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 350px) {
+
+	#udacity {
+		height: 100px;
+		font-size: 1.1em;
+		line-height: 100px;
+	}
+
+	#udacity img {
+		height: 40px;
+		width: 40px;
+		box-shadow: 1px 1px 10px #bbb;
+	}
+
+	header {
+		display: flex;
+		height: 100px;
+		background-color: #fff;
+		border-bottom: 4px solid #011;
+        margin: -8px 8px;
+	}
+
+	#header {
+		margin: -20px 15px;
+	}
+
+	.project-box {
+		min-width:65%;
+	}
+	
+	.box-frame {
+		width:100%;
+	}
+
+	.box-frame img{
+		height:180px;
+		width: 100%;
+		object-fit: fill;
+	}
+
+	.box-frame p {
+		font-size: 1em;
+	}
+
+	.project-header {
+		font-size: .8em;
+		text-align: center;
+	}
+
+}
